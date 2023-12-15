@@ -15,8 +15,8 @@ export const Auth = () => {
             profilePicture: results.user.photoURL,
             isAuth: true,
        };
-        localStorage.setItem("auth", JSON.stringify(authInfo));
-        navigate("/expense-tracker")                  //JSON.stringify() converts the object into a string
+        localStorage.setItem("auth", JSON.stringify(authInfo));                     //"auth" is the key, "authInfo" is the value, "JSON.stringify()" converts the object into a string
+        navigate("/expense-tracker")                  
     }
 
     return (
